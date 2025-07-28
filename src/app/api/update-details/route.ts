@@ -57,7 +57,7 @@
 
 
 import { NextRequest, NextResponse } from 'next/server';
-import { sheets } from '@/lib/googleSheets';
+import { sheets } from '../../../../lib/googleSheets';
 
 const SHEET_ID = '1qG8N2NQIl7j1EHjtNk1CySiCqCRKeICOv7402Q5dVgg';
 const SHEET_NAME = 'Sheet1';
