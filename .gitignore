@@ -40,6 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-credentials.json
+/lib/credentials.json
 *.key.json
 *.secret.json
