@@ -64,7 +64,10 @@ export async function POST(req: NextRequest) {
       rowData: fullRow,
     });
 
-  } catch (err: any) {
-    return NextResponse.json({ success: false, error: err.message || err.toString() });
-  }
+} catch (err) {
+  const errorMessage =
+    err instanceof Error ? err.message : 'Unknown error occurred';
+
+  return NextResponse.json({ success: false, error: errorMessage });
+}
 }
